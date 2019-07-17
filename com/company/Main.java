@@ -72,7 +72,7 @@ public class Main {
     }
 
     private static void csvWrite(int z) {
-        try (PrintWriter writer = new PrintWriter( new File("All_DATA_7-25\\" + z + ".csv"))){
+        try (PrintWriter writer = new PrintWriter( new File("~/All_DATA_7-25/" + z + ".csv"))){
 
             StringBuilder sb = new StringBuilder();
 

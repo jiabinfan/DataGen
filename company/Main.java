@@ -53,7 +53,7 @@ public class Main {
     private static void importer() {
         String line;
 
-        String fileName = "stations1.csv";
+        String fileName = "25_Cord.csv";
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));

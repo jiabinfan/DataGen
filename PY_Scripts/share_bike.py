@@ -10,10 +10,10 @@ FULL = "full"
 INFINIT = 9999999
 TRUCK_WEIGHT = 0
 
-data_path = "/home/agao/ALL_DATA_12-100000-110/"
-rangeTop = 100000
-truckFull = 25
-extraNum = 10
+data_path = "/home/agao/ALL_DATA_7-25/"
+rangeTop = 26
+truckFull = 15
+extraNum = 0
 
 class Station:
     full_load = 20
@@ -365,9 +365,9 @@ def station_125():
     print("                      |_____________________________|")
     print()
     print("###############################################################################")
-    for i in carbon_list:
-        f.write(str(i)+",")
-        f.write(str(i)+"\n")
+    for i in range(0,len(carbon_list)):
+        f.write(str(carbon_list[i])+",")
+        f.write(str(distance_list[i])+"\n")
         #print(i)
 
     #print("distance: ")

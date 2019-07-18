@@ -11,7 +11,7 @@ INFINIT = 9999999
 TRUCK_WEIGHT = 0
 
 data_path = "/home/agao/ALL_DATA_12-1000/"
-rangeTop = 26
+rangeTop = 1000
 truckFull = 25
 extraNum = 0
 

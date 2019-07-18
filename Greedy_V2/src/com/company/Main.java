@@ -15,7 +15,7 @@ public class Main {
     private static double depotXPos = 34.28037084;
     private static double depotYPos = 108.9691212;
     private static int startingBikes = 10;
-    private static String fileName = "/home/agao/ALL_DATA_7-100000-110/";
+    private static String fileName = "/home/agao/ALL_DATA_-100000-110/";
     private static int totNumb = 99999;
 
     //Global Variables

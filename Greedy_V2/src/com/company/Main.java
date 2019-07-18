@@ -14,7 +14,7 @@ public class Main {
     private static double depotYPos = 108.9691212;
     private static int startingBikes = 0;
     private static String fileName = "/home/agao/ALL_DATA_7-1000/";
-    private static int totNumb = 25;
+    private static int totNumb = 999;
 
     //Global Variables
     private static ArrayList<Station> stations = new ArrayList<>();

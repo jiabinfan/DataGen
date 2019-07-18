@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+            <state relative-caret-position="342">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#importer#0;class#Main#0" />
@@ -150,12 +150,12 @@
       <workItem from="1563386742838" duration="180000" />
       <workItem from="1563390414537" duration="4112000" />
       <workItem from="1563463186646" duration="660000" />
-      <workItem from="1563467065247" duration="3622000" />
+      <workItem from="1563467065247" duration="3731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14406000" />
+    <option name="totallyTimeSpent" value="14515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -222,8 +222,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="342">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#importer#0;class#Main#0" />

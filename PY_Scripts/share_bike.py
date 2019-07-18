@@ -13,7 +13,7 @@ TRUCK_WEIGHT = 0
 data_path = "/home/agao/ALL_DATA_7-25/"
 rangeTop = 26
 truckFull = 15
-extraNum = 5
+extraNum = 10
 
 class Station:
     full_load = 20
@@ -353,7 +353,7 @@ def station_125():
         # print("each_carbon: ",carbon,"sum_distance: ", sum_distance)
 
     f = open("out-TSP-7-.csv","w+")
-    print("carbon: ")
+    #print("carbon: ")
     for i in carbon_list:
         f.write(str(i)+",")
         f.write(str(i)+"\n")

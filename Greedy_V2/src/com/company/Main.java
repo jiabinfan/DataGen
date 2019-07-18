@@ -17,7 +17,7 @@ public class Main {
     private static int totNumb = 25;
 
     //Global Variables
-    private static ArrayList<Station> stations = new ArrayList();
+    private static ArrayList<Station> stations = new ArrayList<>();
     private static ArrayList<Station> defStations = new ArrayList<>();
     private static truck Truck = new truck(depotXPos, depotYPos, startingBikes);
     private static double totDist = 0;

@@ -13,7 +13,7 @@ public class Main {
     private static double depotXPos = 34.28037084;
     private static double depotYPos = 108.9691212;
     private static int startingBikes = 15;
-    private static String fileName = "C:\\Users\\Arthur\\Documents\\CodeBackup\\allRandGen\\DATA_25_25\\test";
+    private static String fileName = "/home/agao/ALL_DATA_25-25/";
     private static int totNumb = 25;
 
     //Global Variables
@@ -113,7 +113,7 @@ public class Main {
     }//End importer
 
     private static void csvWrite() {
-        try (PrintWriter writer = new PrintWriter( new File("C:\\Users\\Arthur\\Documents\\CodeBackup\\EXPORT\\export.csv"))){
+        try (PrintWriter writer = new PrintWriter( new File("/home/agao/EXPORT/out.csv"))){
 
             StringBuilder sb = new StringBuilder();
 

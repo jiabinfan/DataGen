@@ -17,11 +17,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2589">
-              <caret line="332" column="1" selection-start-line="332" selection-start-column="1" selection-end-line="332" selection-end-column="1" />
+            <state relative-caret-position="270">
+              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#csvWrite#0;class#Main#0" />
+                <element signature="method#main#0;class#Main#0" />
+                <element signature="method#importer#0;class#Main#0" />
+                <element signature="method#calcDist#0;class#Main#0" />
+                <element signature="method#setDist#0;class#Main#0" />
+                <element signature="method#sorter#0;class#Main#0" />
+                <element signature="method#goStation#0;class#Main#0" />
+                <element signature="method#doStationCalc#0;class#Main#0" />
+                <element signature="method#calcPrint#0;class#Main#0" />
+                <element signature="method#finalPrint#0;class#Main#0" />
+                <element signature="class#Station#0" />
+                <element signature="class#truck#0" />
                 <element signature="e#9146#9147#0" expanded="true" />
                 <element signature="e#9173#9174#0" expanded="true" />
                 <element signature="e#9204#9205#0" expanded="true" />
@@ -141,12 +151,12 @@
       <workItem from="1563386742838" duration="180000" />
       <workItem from="1563390414537" duration="4112000" />
       <workItem from="1563463186646" duration="660000" />
-      <workItem from="1563467065247" duration="1243000" />
+      <workItem from="1563467065247" duration="1855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12027000" />
+    <option name="totallyTimeSpent" value="12639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -213,11 +223,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2589">
-          <caret line="332" column="1" selection-start-line="332" selection-start-column="1" selection-end-line="332" selection-end-column="1" />
+        <state relative-caret-position="270">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#csvWrite#0;class#Main#0" />
+            <element signature="method#main#0;class#Main#0" />
+            <element signature="method#importer#0;class#Main#0" />
+            <element signature="method#calcDist#0;class#Main#0" />
+            <element signature="method#setDist#0;class#Main#0" />
+            <element signature="method#sorter#0;class#Main#0" />
+            <element signature="method#goStation#0;class#Main#0" />
+            <element signature="method#doStationCalc#0;class#Main#0" />
+            <element signature="method#calcPrint#0;class#Main#0" />
+            <element signature="method#finalPrint#0;class#Main#0" />
+            <element signature="class#Station#0" />
+            <element signature="class#truck#0" />
             <element signature="e#9146#9147#0" expanded="true" />
             <element signature="e#9173#9174#0" expanded="true" />
             <element signature="e#9204#9205#0" expanded="true" />

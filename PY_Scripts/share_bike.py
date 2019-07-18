@@ -10,10 +10,10 @@ FULL = "full"
 INFINIT = 9999999
 TRUCK_WEIGHT = 0
 
-data_path = "/home/agao/ALL_DATA_7-1000-110/"
-rangeTop = 1000
+data_path = "/home/agao/ALL_DATA_7-25-110/"
+rangeTop = 26
 truckFull = 15
-extraNum = 10
+extraNum = 0
 
 class Station:
     full_load = 20

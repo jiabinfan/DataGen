@@ -345,22 +345,23 @@ def station_125():
             carbon, sum_distance = generate_carbon(stations)
             carbon_list.append(carbon)
             distance_list.append(sum_distance)
+            print(i)
             #print(carbon)
             # print(sum_distance)
         # print("each_carbon: ",carbon,"sum_distance: ", sum_distance)
 
-    f = open("export.txt","w+")
+    f = open("export.csv","w+")
     print("carbon: ")
     f.write("carbon \n")
     for i in carbon_list:
-        f.write(i)
+        f.write(str(i)+",")
+        f.write(str(i)+"\n")
         print(i)
 
-    print("distance: ")
-    f.write("distance: ")
-    for i in distance_list:
-        f.write(i)
-        print(i)
+    #print("distance: ")
+    #f.write("distance: ")
+    #for i in distance_list:
+    #   print(i)
 # main()
 
 station_125()

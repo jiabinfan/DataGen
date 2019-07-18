@@ -13,7 +13,7 @@ public class Main {
     private static double depotXPos = 34.28037084;
     private static double depotYPos = 108.9691212;
     private static int startingBikes = 0;
-    private static String fileName = "/home/agao/ALL_DATA_7-25/";
+    private static String fileName = "/home/agao/ALL_DATA_7-1000/";
     private static int totNumb = 25;
 
     //Global Variables
@@ -66,8 +66,9 @@ public class Main {
                 System.out.println(i);
             }
             System.out.println();
-            System.out.println("####################################################################################################################################################");
-            System.out.println();
+            System.out.println("###############################################################################");
+            System.out.println("                 DONE                                      DONE          ");
+        System.out.println();
 
             csvWrite();
             finalPrint();

@@ -17,11 +17,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            <state relative-caret-position="1260">
+              <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#main#0;class#Main#0" />
                 <element signature="method#importer#0;class#Main#0" />
                 <element signature="method#calcDist#0;class#Main#0" />
                 <element signature="method#setDist#0;class#Main#0" />
@@ -151,12 +150,12 @@
       <workItem from="1563386742838" duration="180000" />
       <workItem from="1563390414537" duration="4112000" />
       <workItem from="1563463186646" duration="660000" />
-      <workItem from="1563467065247" duration="2170000" />
+      <workItem from="1563467065247" duration="2461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12954000" />
+    <option name="totallyTimeSpent" value="13245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -223,11 +222,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="1260">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Main#0" />
             <element signature="method#importer#0;class#Main#0" />
             <element signature="method#calcDist#0;class#Main#0" />
             <element signature="method#setDist#0;class#Main#0" />

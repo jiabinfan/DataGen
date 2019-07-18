@@ -8,9 +8,11 @@ depot_x = 34.275555
 depot_y = 108.955555
 FULL = "full"
 INFINIT = 9999999
-TRUCK_WEIGHT = 0
+TRUCK_WEIGHT = 26
 
-data_path = "C:\\Users\\Arthur\\Documents\\CodeBackup\\allRandGen\\DATA_25_110\\stations"
+data_path = "/home/agao/ALL_DATA_7-25/"
+rangeTop = 
+
 class Station:
     full_load = 20
     target_load = 10
@@ -335,7 +337,7 @@ def main():
 def station_125():
     carbon_list = []
     distance_list = []
-    for i in range(100, 126):
+    for i in range(0, rangeTop):
         path = data_path + str(i) + ".csv"
         if i:
             stations = generate_data(path)

@@ -8,10 +8,12 @@ depot_x = 34.275555
 depot_y = 108.955555
 FULL = "full"
 INFINIT = 9999999
-TRUCK_WEIGHT = 26
+TRUCK_WEIGHT = 0
 
 data_path = "/home/agao/ALL_DATA_7-25/"
 rangeTop = 26
+truckFull = 15
+extraNum = 0
 
 class Station:
     full_load = 20
@@ -53,7 +55,7 @@ class Station:
 
 
 class Truck:
-    full_load = 40
+    full_load = truckFull
 
     def __init__(self, load, depot_x, depot_y):
         self.num_bikes = load
@@ -229,9 +231,9 @@ def generate_carbon(stations):
     tsp[-1].num_b = 0
     if sum_bikes >= 0:
 
-        truck = Truck(0, depot_x, depot_y)
+        truck = Truck(0 + extraNum, depot_x, depot_y)
     else:
-        truck = Truck(abs(sum_bikes), depot_x, depot_y)
+        truck = Truck(abs(sum_bikes) + extraNum, depot_x, depot_y)
 
     p = 0
     sum_distance = 0
@@ -350,9 +352,8 @@ def station_125():
             # print(sum_distance)
         # print("each_carbon: ",carbon,"sum_distance: ", sum_distance)
 
-    f = open("export.csv","w+")
+    f = open("out-TSP-7-.csv","w+")
     print("carbon: ")
-    f.write("carbon \n")
     for i in carbon_list:
         f.write(str(i)+",")
         f.write(str(i)+"\n")

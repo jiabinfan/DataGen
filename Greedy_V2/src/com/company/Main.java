@@ -9,11 +9,11 @@ public class Main {
 
     //Manipulable Variables
     private static int busWeight = 0;
-    private static int maxBike = 40;
+    private static int maxBike = 15;
     private static double depotXPos = 34.28037084;
     private static double depotYPos = 108.9691212;
-    private static int startingBikes = 15;
-    private static String fileName = "/home/agao/ALL_DATA_25-25/";
+    private static int startingBikes = 0;
+    private static String fileName = "/home/agao/ALL_DATA_7-25/";
     private static int totNumb = 25;
 
     //Global Variables

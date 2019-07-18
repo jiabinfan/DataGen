@@ -1,10 +1,12 @@
 package com.company;
 
 //Imports
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+
 public class Main {
 
     //Manipulable Variables
@@ -33,45 +35,56 @@ public class Main {
     public static void main(String[] args) {
 
 
-            for (int i = 0; i <= totNumb; i++) {
+        for (int i = 0; i <= totNumb; i++) {
 
-                totDist = 0;
-                totEmissions = 0;
-                int temp = importer(i);
-                //System.out.println();
-                if (startingBikes == 0) {
-                    if (temp < 0) {
-                        Truck.setBike(Math.abs(temp));
-                    } else {
-                        Truck.setBike(0);
-                    }
+            totDist = 0;
+            totEmissions = 0;
+            int temp = importer(i);
+            //System.out.println();
+            if (startingBikes == 0) {
+                if (temp < 0) {
+                    Truck.setBike(Math.abs(temp));
                 } else {
-                    if (temp < 0) {
-                        Truck.setBike(Math.abs(temp) + startingBikes);
-                    } else {
-                        Truck.setBike(startingBikes);
-                    }
+                    Truck.setBike(0);
                 }
-                //Truck.setBike(20);
-                Truck.cngPos(34.275555, 108.955555);
-                //Calculate Stations
-
-                while (numStations > 0) {
-                    calcDist();
-                    goStation();
-
+            } else {
+                if (temp < 0) {
+                    Truck.setBike(Math.abs(temp) + startingBikes);
+                } else {
+                    Truck.setBike(startingBikes);
                 }
-                calcPrint();
-
-                System.out.println(i);
             }
-            System.out.println();
-            System.out.println("###############################################################################");
-            System.out.println("                 DONE                                      DONE          ");
+            //Truck.setBike(20);
+            Truck.cngPos(34.275555, 108.955555);
+            //Calculate Stations
+
+            while (numStations > 0) {
+                calcDist();
+                goStation();
+
+            }
+            calcPrint();
+
+            System.out.println(i);
+        }
+        System.out.println();
+        System.out.println("###############################################################################");
+        System.out.println("                 DONE                                    DONE          ");
+        System.out.println();
+        System.out.println("                                     /");
+        System.out.println("                                    /");
+        System.out.println("                                   /");
+        System.out.println("                                  /___");
+        System.out.println();
+        System.out.println("           ___________                              ______________");
+        System.out.println("                      |                             |");
+        System.out.println("                      |_____________________________|");
+        System.out.println();
+        System.out.println("###############################################################################");
         System.out.println();
 
-            csvWrite();
-            finalPrint();
+        csvWrite();
+        finalPrint();
 
     }//End Main
 
@@ -114,7 +127,7 @@ public class Main {
     }//End importer
 
     private static void csvWrite() {
-        try (PrintWriter writer = new PrintWriter( new File("/home/agao/EXPORT/out.csv"))){
+        try (PrintWriter writer = new PrintWriter(new File("/home/agao/EXPORT/out.csv"))) {
 
             StringBuilder sb = new StringBuilder();
 
@@ -145,7 +158,8 @@ public class Main {
         //Sort the ArrayList
         sorter();
     }//End calcDist
-    private static void setDist( int i, ArrayList<Station> tempList) {
+
+    private static void setDist(int i, ArrayList<Station> tempList) {
         double s1 = tempList.get(i).getxPos() - Truck.getxPos();
         double s2 = tempList.get(i).getyPos() - Truck.getyPos();
 
@@ -165,7 +179,7 @@ public class Main {
 
         //Find Stations with deficit and go to closest that satisfies conditions
         for (int i = 0; i < defStations.size(); i++) {
-            if (Math.abs(defStations.get(i).getNumBikes()) <= Truck.getBikes()){
+            if (Math.abs(defStations.get(i).getNumBikes()) <= Truck.getBikes()) {
                 isDropOff = true;
 
                 doStationCalc(defStations, i, true);
@@ -175,9 +189,9 @@ public class Main {
         }
 
         //Find surplus stations when no stations with deficits are available
-        if(!isDropOff){
+        if (!isDropOff) {
             for (int i = 0; i < stations.size(); i++) {
-                if (Truck.getBikes() + stations.get(i).getNumBikes() <= maxBike){
+                if (Truck.getBikes() + stations.get(i).getNumBikes() <= maxBike) {
 
                     doStationCalc(stations, i, false);
 
@@ -186,6 +200,7 @@ public class Main {
             }
         }
     }//End goStation
+
     private static void doStationCalc(ArrayList<Station> temp, int i, boolean isDef) {
         numStations--;
         totDist += temp.get(i).getNextDist();
@@ -195,7 +210,7 @@ public class Main {
 
         Truck.cngPos(temp.get(i).getxPos(), temp.get(i).getyPos());
         Truck.cngBike(temp.get(i).getNumBikes());
-        if(isDef) {
+        if (isDef) {
             //System.out.println(defStations.get(i) + ", " + truckBikes);
             defStations.remove(i);
         } else {
@@ -227,14 +242,14 @@ public class Main {
         for (int i = 0; i < allDist.size(); i++) {
             avg += allDist.get(i);
         }
-        System.out.println(avg/allDist.size());
+        System.out.println(avg / allDist.size());
         System.out.println();
         avg = 0;
         System.out.println("Emissions");
         for (int i = 0; i < allEmis.size(); i++) {
             avg += allEmis.get(i);
         }
-        System.out.println(avg/allEmis.size());
+        System.out.println(avg / allEmis.size());
     }
 }//End Class
 
@@ -246,7 +261,7 @@ class Station implements Comparable<Station> {
     private double nextDist;
     private String name;
 
-    public Station(double x, double y, int num, String n){
+    public Station(double x, double y, int num, String n) {
         xPos = x;
         yPos = y;
         numBikes = num;
@@ -266,16 +281,16 @@ class Station implements Comparable<Station> {
     }
 
     public void setNextDist(double d) {
-        nextDist =  d;
+        nextDist = d;
     }
 
-    public double getNextDist(){
+    public double getNextDist() {
         return nextDist;
     }
 
     @Override
-    public int compareTo(Station compareStation){
-        if(this.getNextDist()>compareStation.getNextDist()){
+    public int compareTo(Station compareStation) {
+        if (this.getNextDist() > compareStation.getNextDist()) {
             return 1;
         } else if (this.getNextDist() == compareStation.getNextDist()) {
             return 0;
@@ -301,7 +316,7 @@ class truck {
     private double yPos;
     private int bikes;
 
-    public truck(double x, double y, int b){
+    public truck(double x, double y, int b) {
         xPos = x;
         bikes = b;
         yPos = y;
@@ -319,15 +334,15 @@ class truck {
         return bikes;
     }
 
-    public void cngBike(int val){
+    public void cngBike(int val) {
         bikes += val;
     }
 
-    public void setBike(int val){
+    public void setBike(int val) {
         bikes = val;
     }
 
-    public void cngPos(double x, double y){
+    public void cngPos(double x, double y) {
         xPos = x;
         yPos = y;
     }

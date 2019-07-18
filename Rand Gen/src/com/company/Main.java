@@ -10,8 +10,8 @@ public class Main {
 
     //public static ArrayList<Integer> totSum = new ArrayList<>();
 
-    public static String fileStructure = "/home/agao/ALL_DATA_7-1000/";
-    public static String inFile = "25_Cord.csv";
+    public static String fileStructure = "/home/agao/ALL_DATA_7-1000-110/";
+    public static String inFile = "110_Cord.csv";
     public static int numGen = 1000;
 
     public static void main(String[] args) {

@@ -21,7 +21,7 @@ public class Main {
         }*/
 
         int numCorr = 0;
-        while(numCorr < 26) {
+        while(numCorr < 1000) {
 
             int totalSum = 0;
 

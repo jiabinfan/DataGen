@@ -10,9 +10,9 @@ public class Main {
 
     //public static ArrayList<Integer> totSum = new ArrayList<>();
 
-    private static String fileStructure = "/home/agao/ALL_DATA_25-1000-110/";
-    private static String inFile = "110_Cord.csv";
-    //public static String inFile = "25_Cord.csv";
+    private static String fileStructure = "/home/agao/ALL_DATA_25-1000/";
+    //private static String inFile = "110_Cord.csv";
+    public static String inFile = "25_Cord.csv";
     private static int numGen = 1000;
 
     public static void main(String[] args) {

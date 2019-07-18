@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+            <state relative-caret-position="684">
+              <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="108" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#importer#0;class#Main#0" />
@@ -31,13 +31,9 @@
                 <element signature="method#finalPrint#0;class#Main#0" />
                 <element signature="class#Station#0" />
                 <element signature="class#truck#0" />
-                <element signature="e#9146#9147#0" expanded="true" />
-                <element signature="e#9173#9174#0" expanded="true" />
-                <element signature="e#9204#9205#0" expanded="true" />
-                <element signature="e#9231#9232#0" expanded="true" />
-                <element signature="e#9260#9261#0" expanded="true" />
-                <element signature="e#9288#9289#0" expanded="true" />
+                <element signature="e#9924#9925#0" expanded="true" />
                 <element signature="e#9952#9953#0" expanded="true" />
+                <element signature="e#9988#9989#0" expanded="true" />
                 <element signature="e#10015#10016#0" expanded="true" />
               </folding>
             </state>
@@ -62,11 +58,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1999" />
-    <option name="y" value="199" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-3208" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -149,6 +145,7 @@
       <workItem from="1563390414537" duration="4112000" />
       <workItem from="1563463186646" duration="660000" />
       <workItem from="1563467065247" duration="5766000" />
+      <workItem from="1563482857712" duration="227000" />
     </task>
     <servers />
   </component>
@@ -156,9 +153,10 @@
     <option name="totallyTimeSpent" value="16550000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-3208" y="-8" width="1296" height="1000" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17556635" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -178,7 +176,6 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -188,6 +185,7 @@
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="SciView" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">

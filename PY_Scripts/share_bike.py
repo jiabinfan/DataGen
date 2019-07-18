@@ -13,7 +13,7 @@ TRUCK_WEIGHT = 0
 data_path = "/home/agao/ALL_DATA_12-25/"
 rangeTop = 26
 truckFull = 25
-extraNum = 5
+extraNum = 10
 
 class Station:
     full_load = 20

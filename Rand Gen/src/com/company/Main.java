@@ -9,6 +9,7 @@ public class Main {
     public static ArrayList<station> allStations = new ArrayList<>();
 
     //public static ArrayList<Integer> totSum = new ArrayList<>();
+    
 
     public static void main(String[] args) {
 
@@ -72,7 +73,7 @@ public class Main {
     }
 
     private static void csvWrite(int z) {
-        try (PrintWriter writer = new PrintWriter( new File("/home/agao/ALL_DATA_7-1000-110/" + z + ".csv"))){
+        try (PrintWriter writer = new PrintWriter( new File("/home/agao/ALL_DATA_7-1000-/25" + z + ".csv"))){
 
             StringBuilder sb = new StringBuilder();
 

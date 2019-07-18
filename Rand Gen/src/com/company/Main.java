@@ -10,10 +10,10 @@ public class Main {
 
     //public static ArrayList<Integer> totSum = new ArrayList<>();
 
-    private static String fileStructure = "/home/agao/ALL_DATA_12-1000-110/";
+    private static String fileStructure = "/home/agao/ALL_DATA_25-25-110/";
     private static String inFile = "110_Cord.csv";
     //public static String inFile = "25_Cord.csv";
-    private static int numGen = 1000;
+    private static int numGen = 26;
 
     public static void main(String[] args) {
 
@@ -35,7 +35,7 @@ public class Main {
                 int randNum = 0;
 
                 while(true){
-                    randNum = ((int)(Math.random() * 24) - 12);
+                    randNum = ((int)(Math.random() * 50) - 25);
                     if(randNum != 0){
                         break;
                     }

@@ -353,13 +353,13 @@ def station_125():
     print("carbon: ")
     f.write("carbon \n")
     for i in carbon_list:
-        f.write(i+"\n")
+        f.write(i)
         print(i)
 
     print("distance: ")
     f.write("distance: ")
     for i in distance_list:
-        f.write(i+"\n")
+        f.write(i)
         print(i)
 # main()
 

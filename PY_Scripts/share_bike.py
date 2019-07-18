@@ -8,12 +8,12 @@ depot_x = 34.275555
 depot_y = 108.955555
 FULL = "full"
 INFINIT = 9999999
-TRUCK_WEIGHT = 10
+TRUCK_WEIGHT = 0
 
-data_path = "/home/agao/ALL_DATA_12-100000-110/"
-rangeTop = 100000
-truckFull = 25
-extraNum = 5
+data_path = "/home/agao/ALL_DATA_7-25/"
+rangeTop = 26
+truckFull = 12
+extraNum = 0
 
 class Station:
     full_load = 20

@@ -10,8 +10,8 @@ FULL = "full"
 INFINIT = 9999999
 TRUCK_WEIGHT = 0
 
-data_path = "/home/agao/ALL_DATA_7-25/"
-rangeTop = 26
+data_path = "/home/agao/ALL_DATA_7-100000/"
+rangeTop = 100000
 truckFull = 15
 extraNum = 0
 
@@ -352,7 +352,7 @@ def station_125():
             # print(sum_distance)
         # print("each_carbon: ",carbon,"sum_distance: ", sum_distance)
 
-    f = open("out-TSP-12-.csv","w+")
+    f = open("out-TSP-7-100000.csv","w+")
     print("###############################################################################")
     print("                 DONE                                    DONE          ")
     print("                                     /")

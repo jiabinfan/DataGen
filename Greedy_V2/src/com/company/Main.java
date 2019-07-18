@@ -12,7 +12,7 @@ public class Main {
     private static int maxBike = 15;
     private static double depotXPos = 34.28037084;
     private static double depotYPos = 108.9691212;
-    private static int startingBikes = 5;
+    private static int startingBikes = 10;
     private static String fileName = "/home/agao/ALL_DATA_7-1000-110/";
     private static int totNumb = 999;
 

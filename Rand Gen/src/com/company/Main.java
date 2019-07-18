@@ -53,7 +53,7 @@ public class Main {
     private static void importer() {
         String line;
 
-        String fileName = "25_Cord.csv";
+        String fileName = "110_Cord.csv";
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
@@ -72,7 +72,7 @@ public class Main {
     }
 
     private static void csvWrite(int z) {
-        try (PrintWriter writer = new PrintWriter( new File("/home/agao/ALL_DATA_7-25/" + z + ".csv"))){
+        try (PrintWriter writer = new PrintWriter( new File("/home/agao/ALL_DATA_7-25-110/" + z + ".csv"))){
 
             StringBuilder sb = new StringBuilder();
 

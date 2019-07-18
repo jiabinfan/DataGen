@@ -9,7 +9,10 @@ public class Main {
     public static ArrayList<station> allStations = new ArrayList<>();
 
     //public static ArrayList<Integer> totSum = new ArrayList<>();
-    
+
+    public static String fileStructure = "/home/agao/ALL_DATA_7-1000/";
+    public static String inFile = "25_Cord.csv";
+    public static int numGen = 1000;
 
     public static void main(String[] args) {
 
@@ -22,7 +25,7 @@ public class Main {
         }*/
 
         int numCorr = 0;
-        while(numCorr < 1000) {
+        while(numCorr < numGen) {
 
             int totalSum = 0;
 
@@ -54,10 +57,8 @@ public class Main {
     private static void importer() {
         String line;
 
-        String fileName = "25_Cord.csv";
-
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(fileName));
+            BufferedReader reader = new BufferedReader(new FileReader(inFile));
 
             while ((line = reader.readLine()) != null) {
                 String[] temp = line.split(",");
@@ -73,7 +74,7 @@ public class Main {
     }
 
     private static void csvWrite(int z) {
-        try (PrintWriter writer = new PrintWriter( new File("/home/agao/ALL_DATA_7-1000-/25" + z + ".csv"))){
+        try (PrintWriter writer = new PrintWriter( new File(fileStructure + z + ".csv"))){
 
             StringBuilder sb = new StringBuilder();
 

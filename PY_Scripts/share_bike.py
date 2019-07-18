@@ -11,7 +11,7 @@ INFINIT = 9999999
 TRUCK_WEIGHT = 26
 
 data_path = "/home/agao/ALL_DATA_7-25/"
-rangeTop = 
+rangeTop = 26
 
 class Station:
     full_load = 20

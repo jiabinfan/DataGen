@@ -357,7 +357,7 @@ def station_125():
     for i in carbon_list:
         f.write(str(i)+",")
         f.write(str(i)+"\n")
-        print(i)
+        #print(i)
 
     #print("distance: ")
     #f.write("distance: ")

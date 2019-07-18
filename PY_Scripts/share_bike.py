@@ -8,12 +8,12 @@ depot_x = 34.275555
 depot_y = 108.955555
 FULL = "full"
 INFINIT = 9999999
-TRUCK_WEIGHT = 0
+TRUCK_WEIGHT = 10
 
-data_path = "/home/agao/ALL_DATA_7-100000-110/"
+data_path = "/home/agao/ALL_DATA_12-100000-110/"
 rangeTop = 100000
-truckFull = 15
-extraNum = 10
+truckFull = 25
+extraNum = 0
 
 class Station:
     full_load = 20
@@ -352,7 +352,7 @@ def station_125():
             # print(sum_distance)
         # print("each_carbon: ",carbon,"sum_distance: ", sum_distance)
 
-    f = open("out-TSP-7-100000.csv","w+")
+    f = open("out-TSP-12-100000.csv","w+")
     print("###############################################################################")
     print("                 DONE                                    DONE          ")
     print("                                     /")

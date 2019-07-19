@@ -386,15 +386,15 @@ def net_function():
         
 
         for i in range(0,nCsv[l.index(data_path)]):
-            data_path = data_path + str(i)
+            data_path = data_path + str(i) +".csv"
             station_125(data_path,0,l)
 
         for i in range(0,nCsv[l.index(data_path)]):
-            data_path = data_path + str(i)
+            data_path = data_path + str(i) +".csv"
             station_125(data_path,5,l)
 
         for i in range(0,nCsv[l.index(data_path)]):
-            data_path = data_path + str(i)
+            data_path = data_path + str(i) +".csv"
             station_125(data_path,10,l)
             
 # main()

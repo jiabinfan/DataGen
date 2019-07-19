@@ -389,15 +389,15 @@ def net_function():
             print("datapath1: ",data_path)
             Data_path = data_path + str(i) +".csv"
             print("datapath2: ",data_path)
-            station_125(Data_path,0,l[i])
+            station_125(Data_path,0,data_path)
 
         for i in range(0,nCsv[l.index(data_path)]):
             Fata_path = data_path + str(i) +".csv"
-            station_125(Fata_path,5,l[i])
+            station_125(Fata_path,5,data_path)
 
         for i in range(0,nCsv[l.index(data_path)]):
             Kata_path = data_path + str(i) +".csv"
-            station_125(Kata_path,10,l[i])
+            station_125(Kata_path,10,data_path)
             
 # main()
 

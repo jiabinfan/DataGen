@@ -10,10 +10,7 @@ FULL = "full"
 INFINIT = 9999999
 TRUCK_WEIGHT = 0
 
-data_path = "/home/agao/ALL_DATA_7-1000-110/"
-rangeTop = 999
-truckFull = 12
-extraNum = 10
+truckFull = 15
 
 class Station:
     full_load = 20
@@ -195,7 +192,7 @@ def read_csv():
     return csv_path
 
 
-def generate_carbon(stations):
+def generate_carbon(stations,extraNum):
     sum_x = 0
     sum_y = 0
 
@@ -324,35 +321,34 @@ def main():
         if i:
             # print(csv_f)
 
-            stations = generate_data(csv_f)
-            carbon, sum_distance = generate_carbon(stations)
+            #stations = generate_data(csv_f)
+            #carbon, sum_distance = generate_carbon(stations)
 
             # print("each_carbon: ",carbon,"sum_distance: ", sum_distance)
-            print(sum_distance)
+            #print(sum_distance)
             # print(carbon)
             # sum_car += carbon
-
+            pass
     # avg_car= sum_car/len(csv_list)
     # print("avg_car: ",avg_car)
 
 
-def station_125():
+def station_125(data_path,k, goPath):
     carbon_list = []
     distance_list = []
-    for i in range(0, rangeTop):
-        path = data_path + str(i) + ".csv"
-        if i:
-            stations = generate_data(path)
-            # tsp = get_tsp(stations,Station(0,9999,depot_x,depot_y))
-            carbon, sum_distance = generate_carbon(stations)
-            carbon_list.append(carbon)
-            distance_list.append(sum_distance)
-            print(i)
-            #print(carbon)
-            # print(sum_distance)
-        # print("each_carbon: ",carbon,"sum_distance: ", sum_distance)
-
-    f = open("out-TSP-7-.csv","w+")
+    
+    if True:
+        stations = generate_data(data_path)
+        # tsp = get_tsp(stations,Station(0,9999,depot_x,depot_y))
+        carbon, sum_distance = generate_carbon(stations,k)
+        carbon_list.append(carbon)
+        distance_list.append(sum_distance)
+        
+        #print(carbon)
+        # print(sum_distance)
+        # print("each_carbon: ",carbon,"sum_distance: ", sum_distance)    
+    
+    f = open(goPath + "OUT + " + str(k) ,"w+")
     print("###############################################################################")
     print("                 DONE                                    DONE          ")
     print("                                     /")
@@ -369,13 +365,42 @@ def station_125():
         f.write(str(carbon_list[i])+",")
         f.write(str(distance_list[i])+"\n")
         #print(i)
-
+    f.write("\n")
     #print("distance: ")
     #f.write("distance: ")
     #for i in distance_list:
     #   print(i)
+
+def net_function():
+    l = ["/home/agao/ALL_DATA_7-25/", "/home/agao/ALL_DATA_7-25-110/",  "/home/agao/ALL_DATA_7-1000/", "/home/agao/ALL_DATA_7-1000-110/", "/home/agao/ALL_DATA_7-100000/", "/home/agao/ALL_DATA_12-25/", "/home/agao/ALL_DATA_12-25-110/",  "/home/agao/ALL_DATA_12-1000/", "/home/agao/ALL_DATA_12-1000-110/", "/home/agao/ALL_DATA_12-100000/", "/home/agao/ALL_DATA_25-25/", "/home/agao/ALL_DATA_25-25-110/",  "/home/agao/ALL_DATA_25-1000/", "/home/agao/ALL_DATA_25-1000-110/", "/home/agao/ALL_DATA_25-100000/"]
+
+    nCsv = [26,26,1000,1000,100000,26,26,1000,1000,100000,26,26,1000,1000,100000]
+    for data_path in l:
+        print(l.index(data_path))
+        if l.index(data_path) in [6]:
+            TRUCK_WEIGHT = 10
+            truckFull = 25
+        if l.index(data_path) in [11]:
+            TRUCK_WEIGHT = 20
+            truckFull = 50
+        
+
+        for i in range(0,nCsv[l.index(data_path)]):
+            data_path = data_path + str(i)
+            station_125(data_path,0,l)
+
+        for i in range(0,nCsv[l.index(data_path)]):
+            data_path = data_path + str(i)
+            station_125(data_path,5,l)
+
+        for i in range(0,nCsv[l.index(data_path)]):
+            data_path = data_path + str(i)
+            station_125(data_path,10,l)
+            
 # main()
 
-station_125()
 
+#station_125()
+
+net_function()
 # depot = Station(0,9999,depot_x,depot_y)

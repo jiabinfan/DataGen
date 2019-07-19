@@ -347,7 +347,7 @@ def station_125(data_path,k, goPath):
         #print(carbon)
         # print(sum_distance)
         # print("each_carbon: ",carbon,"sum_distance: ", sum_distance)    
-    print(type(goPath), goPath)
+   
     f = open(str(goPath) + "OUT + " + str(k) ,"w+")
     print("###############################################################################")
     print("                 DONE                                    DONE          ")
@@ -387,15 +387,15 @@ def net_function():
 
         for i in range(0,nCsv[l.index(data_path)]):
             data_path = data_path + str(i) +".csv"
-            station_125(data_path,0,l)
+            station_125(data_path,0,l[i])
 
         for i in range(0,nCsv[l.index(data_path)]):
             data_path = data_path + str(i) +".csv"
-            station_125(data_path,5,l)
+            station_125(data_path,5,l[i])
 
         for i in range(0,nCsv[l.index(data_path)]):
             data_path = data_path + str(i) +".csv"
-            station_125(data_path,10,l)
+            station_125(data_path,10,l[i])
             
 # main()
 

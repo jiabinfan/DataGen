@@ -386,7 +386,9 @@ def net_function():
         
 
         for i in range(0,nCsv[l.index(data_path)]):
+            print("datapath1: ",data_path)
             data_path = data_path + str(i) +".csv"
+            print("datapath2: ",data_path)
             station_125(data_path,0,l[i])
 
         for i in range(0,nCsv[l.index(data_path)]):
